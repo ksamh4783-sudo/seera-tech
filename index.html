@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seera Solutions | سيرة للحلول التقنية</title>
+    <style>
+        :root {
+            --seera-orange: #e65100; /* نفس لون البرتقالي في الصورة */
+            --bg-cream: #f9f7f2;    /* خلفية كريمي هادية */
+            --text-dark: #212121;
+            --card-border: #e0e0e0;
+        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg-cream); color: var(--text-dark); margin: 0; padding: 0; }
+        
+        /* Navbar */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: white; border-bottom: 1px solid var(--card-border); }
+        .logo { color: var(--seera-orange); font-size: 28px; font-weight: bold; display: flex; align-items: center; gap: 8px; }
+        .nav-buttons button { background: white; border: 1px solid var(--seera-orange); color: var(--seera-orange); padding: 8px 15px; border-radius: 5px; cursor: pointer; margin-right: 5px; }
+
+        /* Header */
+        header { padding: 60px 5%; max-width: 800px; }
+        h1 { font-size: 42px; margin-bottom: 10px; line-height: 1.2; }
+        .search-bar { width: 100%; max-width: 500px; padding: 15px; border: 1px solid var(--card-border); border-radius: 10px; margin-top: 20px; font-size: 16px; }
+
+        /* Categories/Services */
+        .section-title { padding-right: 5%; font-size: 24px; margin-top: 40px; }
+        .categories { display: flex; overflow-x: auto; gap: 15px; padding: 20px 5%; }
+        .cat-card { min-width: 120px; background: white; padding: 20px; border: 1px solid var(--card-border); border-radius: 12px; text-align: center; cursor: pointer; }
+        .cat-card:hover { border-color: var(--seera-orange); }
+
+        /* Listings Grid */
+        .listings { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; padding: 20px 5%; }
+        .item-card { background: white; border-radius: 12px; border: 1px solid var(--card-border); overflow: hidden; }
+        .img-placeholder { height: 180px; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 40px; color: #ccc; }
+        .item-details { padding: 15px; }
+        .price { color: var(--seera-orange); font-weight: bold; font-size: 18px; }
+        .loc { font-size: 12px; color: #777; margin-top: 5px; }
+
+        footer { background: white; padding: 40px 5%; border-top: 1px solid var(--card-border); text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">📦 Seera</div>
+    <div class="nav-buttons">
+        <button>دخول</button>
+        <button style="background: var(--seera-orange); color: white;">حساب جديد</button>
+    </div>
+</nav>
+
+<header>
+    <h1>اشتري وبع خدماتك التقنية والأمنية</h1>
+    <p>تصفح مجموعة واسعة من الحلول التقنية في الإسكندرية لخدمات الـ CCTV والشبكات.</p>
+    <input type="text" class="search-bar" placeholder="🔍 ابحث عن خدمة (مثلاً: تركيب كاميرات، مايكروتك)...">
+</header>
+
+<div class="section-title">التصنيفات الرئيسية</div>
+<div class="categories">
+    <div class="cat-card">🖥️<br>الإلكترونيات</div>
+    <div class="cat-card">🎥<br>IP Cam</div>
+    <div class="cat-card">📡<br>Sat-lit</div>
+    <div class="cat-card">🌐<br>Networks</div>
+    <div class="cat-card">🔧<br>صيانة</div>
+</div>
+
+<div class="section-title">أحدث الخدمات المعروضة</div>
+<div class="listings">
+    <div class="item-card">
+        <div class="img-placeholder">📸</div>
+        <div class="item-details">
+            <div class="price">عروض خاصة</div>
+            <div>تركيب كاميرات CCTV و IP</div>
+            <div class="loc">الإسكندرية، مصر</div>
+        </div>
+    </div>
+    <div class="item-card">
+        <div class="img-placeholder">📶</div>
+        <div class="item-details">
+            <div class="price">دعم فني</div>
+            <div>برمجة مايكروتك وشبكات</div>
+            <div class="loc">الإسكندرية، مصر</div>
+        </div>
+    </div>
+    <div class="item-card">
+        <div class="img-placeholder">🇷🇺</div>
+        <div class="item-details">
+            <div class="price">ترجمة فنية</div>
+            <div>دعم تقني باللغة الروسية</div>
+            <div class="loc">متاح للفنادق والشركات</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p><strong>Seera Solutions - سامح رزق إسكندر</strong></p>
+    <p>تواصل معنا: 01556286117 | samh_rizk2007@yahoo.com</p>
+</footer>
+
+</body>
+</html>
