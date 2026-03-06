@@ -30,14 +30,14 @@ interface Service {
 const services: Service[] = [
   {
     icon: Video,
-    title: 'أنظمة المراقبة (CCTV & IP)',
-    description: 'توريد وتركيب أحدث أنظمة الكاميرات مع حلول المراقبة عن بعد للفنادق والشركات لضمان أقصى درجات الأمان.',
+    title: 'أنظمة المراقبة الذكية',
+    description: 'تركيب سيستم كاميرات مراقبة كامل يتيح لك المتابعة المباشرة من هاتفك المحمول 📱 في أي وقت ومن أي مكان بوضوح عالٍ.',
     features: [
-      'تركيب كاميرات IP و CCTV بدقة عالية',
       'ربط نظام المراقبة بالموبايل للمتابعة عن بعد',
-      'برمجة أجهزة التسجيل DVR & NVR',
-      'عقود صيانة دورية للمنشآت الكبيرة',
-      'حلول تخزين البيانات والنسخ الاحتياطي'
+      'تركيب كاميرات IP و CCTV بدقة 4K و Full HD',
+      'برمجة أجهزة التسجيل DVR & NVR وتجهيز الهاردات',
+      'دعم فني وصيانة في السيوف وكافة مناطق الإسكندرية',
+      'حلول تأمين الفنادق والشركات والكافيهات'
     ],
     color: 'cyan',
     gradient: 'from-cyan-500 to-blue-600'
@@ -45,69 +45,69 @@ const services: Service[] = [
   {
     icon: Tv,
     title: 'صيانة وبرمجة الشاشات',
-    description: 'مركز متخصص لصيانة الشاشات المتقدمة يشمل تغيير البانل وتحديث السوفت وير باستخدام أحدث المبرمجات.',
+    description: 'مركز متخصص في دوران السيوف لصيانة الشاشات (LED, LCD) باستخدام أحدث المبرمجات وقطع الغيار الأصلية 🛠️.',
     features: [
-      'تغيير البانل (Panel Replacement) بدقة',
-      'شحن الفلاشات وتحديث السوفت وير بالمبرمجة',
-      'إصلاح أعطال الباور والإضاءة (Backlight)',
-      'تحديث الأنظمة للشاشات السمارت والـ 4K',
-      'صيانة شاشات العرض الكبيرة للفنادق'
+      'شحن فلاشات وبرمجة السوفت وير بالمبرمجة',
+      'فك وتركيب قطع الغيار الأصلية وتغيير الليدات',
+      'إصلاح أعطال الباور والبيانات (Panel Repair)',
+      'تحديث أنظمة الشاشات السمارت وتطبيقاتها',
+      'صيانة فورية مع ضمان على قطع الغيار'
     ],
     color: 'purple',
     gradient: 'from-purple-500 to-pink-600'
   },
   {
-    icon: Store,
-    title: 'أنظمة الكاشير وإدارة المنشآت',
-    description: 'حلول متكاملة لإدارة المبيعات والمخازن (POS) مخصصة للكافيتريات والمطاعم والشركات التجارية.',
-    features: [
-      'تركيب وبرمجة سيستم الكاشير المتكامل',
-      'ربط الطابعات والموازين وأجهزة الباركود',
-      'تقارير مبيعات وجرد لحظية بدقة عالية',
-      'أنظمة إدارة المخازن والموردين',
-      'دعم فني سريع لحل مشكلات السيستم'
-    ],
-    color: 'blue',
-    gradient: 'from-blue-500 to-indigo-600'
-  },
-  {
     icon: Wifi,
-    title: 'شبكات الإنترنت (Hotspot)',
-    description: 'تركيب أنظمة كروت الإنترنت وتوزيع الإشارة للمساحات الواسعة في الكافيهات والأماكن العامة.',
+    title: 'سيستم كروت النت (Hotspot)',
+    description: 'تجهيز كافيهات ومطاعم الإسكندرية بسيستم كروت نت متكامل. أداء سريع واستقرار تام.. والسعر مفاجأة! 🎁',
     features: [
-      'إنشاء سيستم كروت نت (User Manager)',
+      'إنشاء سيستم كروت (User Manager) احترافي',
       'توزيع الإشارة بأقوى أجهزة الـ Access Points',
-      'تحديد السرعات ومدة الاستخدام لكل مستخدم',
-      'تغطية كاملة للفنادق والمنشآت الكبيرة',
-      'حماية الشبكة من الاختراق والاستخدام غير المشروع'
+      'تحديد السرعات والتحكم الكامل في المستخدمين',
+      'حماية الشبكة من الاختراق والبرامج الضارة',
+      'دعم فني مخصص للكافيهات لضمان عدم الانقطاع'
     ],
     color: 'orange',
     gradient: 'from-orange-500 to-red-600'
   },
   {
-    icon: Satellite,
-    title: 'أنظمة الساتالايت المركزية',
-    description: 'خدمات احترافية لتركيب الدش المركزي وبرمجة الرسيفرات وتحديث القنوات لجميع الأنواع.',
+    icon: Store,
+    title: 'أنظمة الكاشير (POS)',
+    description: 'حلول متكاملة لإدارة المبيعات والمخازن مخصصة للكافيتريات والمطاعم والشركات في الإسكندرية 💰.',
     features: [
-      'تركيب أنظمة الدش المركزي للفنادق والعمارات',
-      'برمجة وتحديث جميع أنواع الرسيفرات',
-      'تنزيل أحدث ملفات القنوات وترتيبها',
+      'تركيب وبرمجة أجهزة الكاشير والباركود',
+      'سيستم مبيعات وجرد لحظي بدقة عالية',
+      'ربط طابعات الفواتير والموازين الإلكترونية',
+      'تدريب الموظفين على استخدام نظام الإدارة',
+      'تقارير دورية للأرباح والمخزون'
+    ],
+    color: 'blue',
+    gradient: 'from-blue-500 to-indigo-600'
+  },
+  {
+    icon: Satellite,
+    title: 'الساتالايت والدش المركزي',
+    description: 'تركيب وصيانة أنظمة الدش المركزي وبرمجة الرسيفرات بأحدث ملفات القنوات والترددات 📡.',
+    features: [
+      'تركيب دش مركزي للفنادق والعمارات السكنية',
+      'برمجة وتحديث جميع أنواع الرسيفرات (HD/4K)',
+      'تنزيل أحدث ملفات القنوات المرتبة',
       'تحديث السوفت وير لفتح تطبيقات المشاهدة',
-      'صيانة وضبط جودة الإشارة والترددات'
+      'ضبط الإشارة لضمان جودة بث عالية'
     ],
     color: 'green',
     gradient: 'from-emerald-500 to-teal-600'
   },
   {
     icon: ShieldCheck,
-    title: 'عقود الصيانة السنوية',
-    description: 'نقدم حلول الدعم الفني المستمر وعقود الصيانة الدورية للشركات والمنشآت لضمان استمرارية العمل.',
+    title: 'عقود الصيانة والتركيبات',
+    description: 'نلتزم بتقديم أفضل خدمة تركيب وصيانة دورية لضمان عمل كافة أنظمتك التقنية بكفاءة 🛡️.',
     features: [
-      'زيارات دورية لفحص جميع الأنظمة التقنية',
-      'أولوية الاستجابة في حالات الطوارئ',
-      'توفير قطع الغيار الأصلية والبديلة',
-      'تحديث دوري لجميع البرامج والأنظمة',
-      'تقارير دورية عن حالة البنية التحتية'
+      'زيارات صيانة دورية لمنطقة السيوف وكافة الإسكندرية',
+      'استجابة سريعة للأعطال الطارئة في الكافيهات والشركات',
+      'توفير قطع الغيار بأسعار تنافسية',
+      'تحديث دوري لكافة الأنظمة والبرامج',
+      'تقارير فنية عن حالة الأجهزة والشبكات'
     ],
     color: 'pink',
     gradient: 'from-pink-500 to-rose-600'
@@ -129,7 +129,7 @@ const Services = () => {
           }
         });
       },
-      { threshold: 0.2, rootMargin: '0px 0px -50px 0px' }
+      { threshold: 0.1 }
     );
 
     cardsRef.current.forEach((card) => {
@@ -148,21 +148,17 @@ const Services = () => {
 
   return (
     <section id="services" className="relative py-32 bg-[#0a0f1c]">
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent" />
-      <div className="absolute top-1/3 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-[150px]" />
-      <div className="absolute bottom-1/3 left-0 w-80 h-80 bg-blue-600/10 rounded-full blur-[120px]" />
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect mb-6">
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-            <span className="text-sm text-cyan-400">حلولنا التقنية</span>
+            <span className="text-sm text-cyan-400">سيرا للحلول التقنية - الإسكندرية</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            خدمات <span className="text-gradient">متكاملة</span> لمنشأتك
+            حلول <span className="text-gradient">أمان وإدارة</span> متكاملة
           </h2>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            نوفر مجموعة واسعة من الحلول التقنية المصممة خصيصاً للفنادق والشركات والكافيتريات بأعلى معايير الجودة
+            متخصصون في تجهيز الكافيهات والشركات بأحدث الأنظمة من دوران السيوف إلى كافة أرجاء الإسكندرية
           </p>
         </div>
 
@@ -201,39 +197,25 @@ const Services = () => {
             );
           })}
         </div>
-
-        <div className="text-center mt-16">
-          <p className="text-white/60 mb-6">هل تحتاج إلى حل تقني مخصص؟</p>
-          <Button
-            onClick={scrollToContact}
-            className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-8 py-6 rounded-full text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/30"
-          >
-            اطلب استشارة مجانية
-            <ArrowLeft className="w-5 h-5 mr-2" />
-          </Button>
-        </div>
       </div>
 
       <Dialog open={!!selectedService} onOpenChange={() => setSelectedService(null)}>
         <DialogContent className="bg-[#0d1424] border-white/10 text-white max-w-lg">
           <DialogHeader>
-            <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${selectedService?.gradient} flex items-center justify-center mb-4`}>
-              {selectedService && <selectedService.icon className="w-8 h-8 text-white" />}
-            </div>
             <DialogTitle className="text-2xl font-bold text-white">
               {selectedService?.title}
             </DialogTitle>
-            <DialogDescription className="text-white/60">
+            <DialogDescription className="text-white/60 text-right">
               {selectedService?.description}
             </DialogDescription>
           </DialogHeader>
-          <div className="mt-6">
-            <h4 className="text-white font-semibold mb-4">ماذا نقدم في هذه الخدمة:</h4>
+          <div className="mt-6 text-right">
+            <h4 className="text-white font-semibold mb-4">مميزات الخدمة:</h4>
             <ul className="space-y-3">
               {selectedService?.features.map((feature, idx) => (
-                <li key={idx} className="flex items-center gap-3 text-white/70">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                <li key={idx} className="flex items-center justify-end gap-3 text-white/70">
                   <span>{feature}</span>
+                  <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
                 </li>
               ))}
             </ul>
@@ -244,7 +226,7 @@ const Services = () => {
               }}
               className="w-full mt-8 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white py-6 rounded-xl font-semibold"
             >
-              اطلب الخدمة الآن
+              اطلب السعر المفاجأة الآن 🎁
             </Button>
           </div>
         </DialogContent>
