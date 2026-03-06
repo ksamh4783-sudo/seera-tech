@@ -2,7 +2,7 @@ import { Toaster } from '@/components/ui/sonner';
 import { FaWhatsapp } from 'react-icons/fa'; // إضافة أيقونة واتساب
 import Navigation from './sections/Navigation';
 import Hero from './sections/Hero';
-import Services from './sections/Myervices';
+import Services from './sections/MyServices';
 import About from './sections/About';
 import Stats from './sections/Stats';
 import Contact from './sections/Contact';
