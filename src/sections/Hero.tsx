@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { ArrowLeft, Sparkles, Zap, Shield } from 'lucide-react';
+import { ArrowLeft, Sparkles, Zap, Shield, Monitor, Wifi, Settings } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -24,7 +24,6 @@ const Hero = () => {
       opacity: number;
     }> = [];
 
-    // Create particles
     for (let i = 0; i < 80; i++) {
       particles.push({
         x: Math.random() * canvas.width,
@@ -54,7 +53,6 @@ const Hero = () => {
         ctx.fillStyle = `rgba(6, 182, 212, ${particle.opacity})`;
         ctx.fill();
 
-        // Draw connections
         particles.slice(i + 1).forEach((other) => {
           const dx = particle.x - other.x;
           const dy = particle.y - other.y;
@@ -97,46 +95,38 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Canvas Background */}
       <canvas
         ref={canvasRef}
         className="absolute inset-0 z-0"
         style={{ background: 'linear-gradient(135deg, #0a0f1c 0%, #0d1a2d 50%, #0a0f1c 100%)' }}
       />
 
-      {/* Gradient Orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-[120px] animate-pulse-glow" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-600/20 rounded-full blur-[100px] animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-400/10 rounded-full blur-[150px]" />
 
-      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="text-center">
-          {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect mb-8 animate-slide-up">
             <Sparkles className="w-4 h-4 text-cyan-400" />
-            <span className="text-sm text-white/80">نحول أفكارك إلى واقع رقمي</span>
+            <span className="text-sm text-white/80">نؤمن منشأتك بأحدث التقنيات العالمية</span>
           </div>
 
-          {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
             <span className="text-white">سيرا</span>
             <span className="text-gradient"> للحلول التقنية</span>
           </h1>
 
-          {/* Subtitle */}
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            نقدم حلولاً تقنية مبتكرة ومتكاملة لتطوير أعمالك، من تصميم المواقع وتطبيقات الجوال
-            إلى الحلول السحابية والذكاء الاصطناعي
+            شريكك التقني الموثوق في الإسكندرية لتجهيز أنظمة المراقبة الذكية، صيانة الإلكترونيات، وحلول الشبكات والمايكروتك الاحترافية.
           </p>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slide-up" style={{ animationDelay: '0.3s' }}>
             <Button
               onClick={() => scrollToSection('#contact')}
               className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-8 py-6 rounded-full text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/30 group"
             >
-              ابدأ مشروعك الآن
+              اطلب معاينة مجانية
               <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
             </Button>
             <Button
@@ -148,36 +138,34 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Features */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto animate-slide-up" style={{ animationDelay: '0.4s' }}>
             <div className="glass-effect rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 group">
               <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
-                <Zap className="w-7 h-7 text-cyan-400" />
+                <Shield className="w-7 h-7 text-cyan-400" />
               </div>
-              <h3 className="text-white font-semibold mb-2">تطوير سريع</h3>
-              <p className="text-white/50 text-sm">نسلم مشاريعك في وقت قياسي مع أعلى معايير الجودة</p>
+              <h3 className="text-white font-semibold mb-2">أنظمة أمان</h3>
+              <p className="text-white/50 text-sm">تركيب وصيانة كاميرات المراقبة IP و CCTV بأعلى دقة</p>
             </div>
 
             <div className="glass-effect rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 group">
               <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-500/20 to-red-600/20 flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
-                <Shield className="w-7 h-7 text-orange-400" />
+                <Wifi className="w-7 h-7 text-orange-400" />
               </div>
-              <h3 className="text-white font-semibold mb-2">أمان متكامل</h3>
-              <p className="text-white/50 text-sm">حماية كاملة لبياناتك ومشاريعك بأحدث تقنيات الأمان</p>
+              <h3 className="text-white font-semibold mb-2">شبكات متطورة</h3>
+              <p className="text-white/50 text-sm">برمجة مايكروتك وتجهيز أنظمة كروت النت للكافيهات</p>
             </div>
 
             <div className="glass-effect rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 group">
               <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500/20 to-pink-600/20 flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
-                <Sparkles className="w-7 h-7 text-purple-400" />
+                <Settings className="w-7 h-7 text-purple-400" />
               </div>
-              <h3 className="text-white font-semibold mb-2">تصميم مبتكر</h3>
-              <p className="text-white/50 text-sm">تصاميم عصرية وجذابة تضمن أفضل تجربة للمستخدم</p>
+              <h3 className="text-white font-semibold mb-2">صيانة احترافية</h3>
+              <p className="text-white/50 text-sm">إصلاح الشاشات وبرمجة الفلاشات لكافة الأجهزة الإلكترونية</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom Gradient */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0f1c] to-transparent z-10" />
     </section>
   );
